@@ -20,8 +20,6 @@ REPO = os.getenv('REPO')
 #REPO2 = os.getenv('REPO2')
 headers = {
     'Authorization': f'token {GITHUB_TOKEN}',
-    'Accept': 'application/vnd.github+json'
-     'Authorization': f'token {GITHUB_TOKEN2}',
     'Accept': 'application/vnd.github+json'}
 
 app = Flask(__name__)
