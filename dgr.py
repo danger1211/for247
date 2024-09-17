@@ -34,7 +34,7 @@ logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(message)s')
 
 def get_codespace_status():
     url = f'https://api.github.com/user/codespaces/{CODESPACE_NAME}'
-   url = f'https://api.github.com/user/codespaces/{CODESPACE_NAME2}'
+ #  url = f'https://api.github.com/user/codespaces/{CODESPACE_NAME2}'
     response = requests.get(url, headers=headers)
     if response.status_code == 200:
         data = response.json()
@@ -49,7 +49,7 @@ def get_codespace_status():
 
 def start_codespace():
     url = f'https://api.github.com/user/codespaces/{CODESPACE_NAME}/start'
-   url = f'https://api.github.com/user/codespaces/{CODESPACE_NAME2}/start'
+  # url = f'https://api.github.com/user/codespaces/{CODESPACE_NAME2}/start'
     retries = 3
     for attempt in range(retries):
         response = requests.post(url, headers=headers)
