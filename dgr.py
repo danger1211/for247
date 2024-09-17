@@ -10,13 +10,13 @@ from flask.logging import default_handler
 # Load environment variables from .env file
 load_dotenv()
 
-GITHUB_TOKEN = os.getenv('GITHUB_TOKEN')
+GITHUB_TOKEN = os.getenv('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')
 #GITHUB_TOKEN2= os.getenv('GITHUB_TOKEN2')
-CODESPACE_NAME = os.getenv('CODESPACE_NAME')
+CODESPACE_NAME = os.getenv('opulent-parakeet-565qrgw9jw7hvq5')
 #CODESPACE_NAME2= os.getenv('CODESPACE_NAME2')
-OWNER = os.getenv('OWNER')
+OWNER = os.getenv('danger1211')
 #OWNER2= os.getenv('OWNER2')
-REPO = os.getenv('REPO')
+REPO = os.getenv('tmkcbgmi')
 #REPO2 = os.getenv('REPO2')
 headers = {
     'Authorization': f'token {GITHUB_TOKEN}',
